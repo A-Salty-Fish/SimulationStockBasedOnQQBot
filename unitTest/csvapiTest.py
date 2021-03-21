@@ -1,5 +1,8 @@
 import unittest
 import tsAPI.csvapi as csvapi
+from tsAPI.myDecorator import countTime
+
+
 # -*- coding:utf-8 -*-
 
 class MyTestCase(unittest.TestCase):
@@ -11,7 +14,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_init(self):
         csvapi.initDic()
-
+    @countTime
     def test_getName(self):
         csvapi.initDic()
         csvapi.getCodeByName("中平安")

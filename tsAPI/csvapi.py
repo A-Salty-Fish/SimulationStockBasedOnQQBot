@@ -21,7 +21,6 @@ def initDic():
                 dic[val] = index
                 index += 1
 
-
 def getCodeByName(name):
     with open(filename, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
